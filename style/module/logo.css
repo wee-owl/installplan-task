@@ -1,0 +1,18 @@
+/* логотип */
+.menu-logo {
+  padding: 10px;
+}
+
+.menu-logo-link:hover .menu-logo-image,
+.menu-logo-link:active .menu-logo-image,
+.menu-logo-link:focus .menu-logo-image,
+.menu-logo-link:focus-visible .menu-logo-image {
+  transform: scale(1.1);
+}
+
+.menu-logo-image {
+  width: 50px;
+  margin: 0 auto;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=0.4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>InstallPlan</title>
+    <link rel="icon" href="assets/short_logo.png" type="image/png">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="body-wrapper">
+
+      <section class="menu-wrapper">
+
+        <div class="menu-logo">
+          <a class="menu-logo-link" href="#0">
+            <img class="menu-logo-image" src="./assets/short_logo.svg" alt="Логотип">
+            <h1 hidden>InstallPlan</h1>
+          </a>
+        </div>
+
+        <div class="menu-visibility-button">
+          <button class="visibility-button" type="button" title="Показать/скрыть боковое меню"></button>
+        </div>
+
+        <div class="menu-status-list">
+          <a class="status-item status-notification" href="#0" title="Уведомления">
+            <span class="status-count">
+              <span class="status-count-value" data-type="notification"></span>
+            </span>
+            <img class="status-image" src="./assets/notification.svg" alt="Уведомления">
+          </a>
+          <a class="status-item status-approval" href="#0" title="Согласования">
+            <span class="status-count">
+              <span class="status-count-value" data-type="approval"></span>
+            </span>
+            <img class="status-image" src="./assets/approvals.svg" alt="Согласования">
+          </a>
+        </div>
+
+        <div class="decorate-line"></div>
+
+        <ul class="menu-list-wrapper">
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Планировщик">
+              <img class="menu-item-icon" src="./assets/plannerLogo.svg" alt="Планировщик">
+              <span class="menu-item-title">планировщик</span>
+            </a>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="CRM">
+              <img class="menu-item-icon" src="./assets/CRMlogo.svg" alt="CRM">
+              <span class="menu-item-title">CRM</span>
+            </a>
+            <button class="sublist-button" type="button" title="Открыть подраздел CRM"></button>
+            <ul class="menu-sublist-wrapper">
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Сделки">
+                  сделки
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Компании">
+                  компании
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Контакты">
+                  контакты
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Объекты">
+                  объекты
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Договоры">
+                  договоры
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Коммерческие предложения">
+                  коммерческие предложения
+                </a>
+                <button class="add-option-button" type="button" title="Создать коммерческое предложение"></button>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Счета">
+                  счета
+                </a>
+                <button class="add-option-button" type="button" title="Создать счет"></button>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Акты выполненных работ">
+                  акты выполненных работ
+                </a>
+                <button class="add-option-button" type="button" title="Создать акт выполненных работ"></button>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Склад">
+              <img class="menu-item-icon" src="./assets/warehouseLogo.svg" alt="Склад">
+              <span class="menu-item-title">склад</span>
+            </a>
+            <button class="sublist-button" type="button" title="Открыть подраздел Склад"></button>
+            <ul class="menu-sublist-wrapper">
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Закупки">
+                  закупки
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Продажи">
+                  продажи
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Товары">
+                  товары
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Инструменты">
+              <img class="menu-item-icon" src="./assets/toolsLogo.svg" alt="Инструменты">
+              <span class="menu-item-title">инструменты</span>
+            </a>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Help Desk">
+              <img class="menu-item-icon" src="./assets/HDlogo.svg" alt="Help Desk">
+              <span class="menu-item-title">help desk</span>
+            </a>
+            <button class="sublist-button" type="button" title="Открыть подраздел Help Desk"></button>
+            <ul class="menu-sublist-wrapper">
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Заявки">
+                  заявки
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Календарь">
+                  календарь
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Компании">
+                  компании
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Пользователи">
+                  пользователи
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Отчеты">
+                  отчеты
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Парк техники">
+                  парк техники
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Финансы">
+              <img class="menu-item-icon" src="./assets/finances.svg" alt="Финансы">
+              <span class="menu-item-title">финансы</span>
+            </a>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Аналитика">
+              <img class="menu-item-icon" src="./assets/analytics.svg" alt="Аналитика">
+              <span class="menu-item-title">аналитика</span>
+            </a>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="База знаний">
+              <img class="menu-item-icon" src="./assets/knowledge.svg" alt="База знаний">
+              <span class="menu-item-title">база знаний</span>
+            </a>
+          </li>
+
+          <li class="decorate-line"></li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Документация">
+              <img class="menu-item-icon" src="./assets/manual_icon.svg" alt="Документация">
+              <span class="menu-item-title">документация</span>
+            </a>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Настройки">
+              <img class="menu-item-icon" src="./assets/settingsLogo.svg" alt="Настройки">
+              <span class="menu-item-title">настройки</span>
+            </a>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Список обновлений">
+              <img class="menu-item-icon" src="./assets/update_list.svg" alt="Список обновлений">
+              <span class="menu-item-title">список обновлений</span>
+            </a>
+          </li>
+
+          <li class="decorate-line"></li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Пользователи">
+              <img class="menu-item-icon" src="./assets/userListlogo.svg" alt="Пользователи">
+              <span class="menu-item-title">пользователи</span>
+            </a>
+            <button class="sublist-button" type="button" title="Открыть подраздел Пользователи"></button>
+            <ul class="menu-sublist-wrapper">
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Создать пользователя">
+                  создать пользователя
+                </a>
+                <button class="add-option-button" type="button" title="Создать пользователя"></button>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Полный список">
+                  полный список
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Быстрый просмотр">
+                  быстрый просмотр
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-list-item">
+            <a class="menu-item-link" href="#0" title="Задачи">
+              <img class="menu-item-icon" src="./assets/taskListLogo.svg" alt="Задачи">
+              <span class="menu-item-title">задачи</span>
+            </a>
+            <button class="sublist-button" type="button" title="Открыть подраздел Задачи"></button>
+            <ul class="menu-sublist-wrapper">
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Быстрый просмотр">
+                  быстрый просмотр
+                </a>
+                <button class="add-option-button" type="button" title="Создать быстрый просмотр"></button>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Список задач">
+                  список задач
+                </a>
+                <button class="add-option-button" type="button" title="Создать список задач"></button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <footer class="menu-footer">
+          <div class="menu-error-button">
+            <button class="error-button" type="button" title="Сообщить об ошибке"></button>
+          </div>
+  
+          <div class="menu-toggle-wrapper">
+            <div class="menu-toggle-button" title="Скрыть боковое меню">
+              <div class="toggle-circle toggle-circle_active"></div>
+            </div>
+            <span class="toggle-text" hidden>всегда скрыт</span>
+            <span class="toggle-text">всегда открыт</span>
+          </div>
+
+          <div class="decorate-line"></div>
+
+          <div class="menu-list-item">
+            <a class="menu-user-link" href="#0" title="Личный кабинет">
+              <img class="menu-user-icon" src="./assets/user.svg" alt="Личный кабинет">
+              <span class="menu-user-name">Пользователь</span>
+            </a>
+            <button class="sublist-button" type="button" title="Открыть раздел Пользователь"></button>
+            <ul class="menu-sublist-wrapper">
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Настройки">
+                  настройки
+                </a>
+              </li>
+
+              <li class="menu-sublist-item">
+                <a class="sublist-item-link" href="#0" title="Выйти">
+                  выйти
+                </a>
+                <button class="logout-button" type="button" title="Выйти из личного кабинета"></button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="decorate-line"></div>
+
+          <div class="menu-download-wrapper">
+            <ul class="menu-download-list">
+              <li class="menu-download-item">
+                <a class="menu-download-link" href="#0" download title="Перейти в App Store">
+                  <img class="menu-download-icon" src="./assets/app-store.svg" alt="App Store">
+                </a>
+              </li>
+              <li class="menu-download-item">
+                <a class="menu-download-link" href="#0" download title="Перейти в Google Play">
+                  <img class="menu-download-icon" src="./assets/google-play.svg" alt="Google Play">
+                </a>
+              </li>
+              <li class="menu-download-item">
+                <a class="menu-download-link" href="#0" title="Перейти в Telegram">
+                  <img class="menu-download-icon" src="./assets/telegram.svg" alt="Telegram">
+                </a>
+              </li>
+            </ul>
+            <p class="menu-download-text">InstallPlan Version&nbsp;1.2</p>
+          </div>
+        </footer>
+
+      </section>
+
+      <section class="main-wrapper">
+        <header class="header">
+          <h2 hidden>Меню разделов/подразделов</h2>
+        </header>
+
+        <section class="main">
+          <div class="content-wrapper">
+            <h2 class="content">здесь будет контент</h2>
+          </div>
+        </section>
+      </section>
+
+    </div>
+  </body>
+
+</html>

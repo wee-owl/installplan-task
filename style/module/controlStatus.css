@@ -1,0 +1,34 @@
+/* уведомления и согласования */
+.menu-status-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-status-list_hidden {
+  flex-wrap: wrap;
+}
+
+.status-count {
+  position: relative;
+  top: 15px;
+  left: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  color: #000000;
+  font-size: var(--menu-font-size);
+  border: 1px solid var(--menu-status-color);
+  border-radius: 25px;
+  background-color: var(--menu-status-color);
+}
+
+.status-image {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
